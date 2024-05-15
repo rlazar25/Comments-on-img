@@ -12,6 +12,11 @@ function createComments(){
         </div>
     `.trim()
 })
-    oneCommentDiv.innerHTML = text
+    if(text.length === 0 ){
+        text += '<h3>No coments</h3>';
+    }
+    
+    oneCommentDiv.innerHTML = text;
+    
 }
 
